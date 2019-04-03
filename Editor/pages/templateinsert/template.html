@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PWB | DASHBOARD</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="./../../assets/css/animate.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Prematix Website Builder</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <p>Navigation</p>
+                <li>
+                    <a href="./../../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./../dashboard/dashboard.html">Dashboard</a>
+                </li>
+                <!-- <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="./../template/template.html">Templates</a>
+                </li>
+                <li class="active">
+                    <a href="./template.html">Template Insert</a>
+                </li>
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li><a>Logout</a></li>
+                <li><a class="article">Back to Home</a></li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-justify"></i>
+
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li><a class="useraccount_firstletter">:)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pad30 websitedatanotfound">
+                <div class="container-fluid">
+                    <p>Add Template</p>
+                    <div class="row boxshadow1 bgwhite pad10">
+                        <form action="javascript:void(0);" onSubmit="pwbtemplateinsert()" autocomplete="off">
+                            <div class="pad10">
+                                <p>Template Name</p>
+                                <input type="text" id="templatename" class="form-control" required>
+                            </div>
+                            <div class="pad10">
+                                <p>Page Name</p>
+                                <input type="text" id="pagename" class="form-control" required>
+                            </div>
+                            <div class="pad10">
+                                <p>html Code</p>
+                                <textarea class="form-control" id="html" rows="20" style="resize: none;" required></textarea>
+                            </div>
+                            <div class="pad10">
+                                <p>Template Image</p>
+                                <input type="file" onchange="encodeImageFileAsURL(this)" class="form-control"  accept="image/*" />
+                            </div>
+
+                            <div class="textalignrgt pad10">
+                                <button type="submit" class="templateinsertbtn">SUBMIT</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./../../assets/js/config.js"></script>
+    <script src="./../../assets/js/apicall.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <script src="./template.js"></script>
+</body>
+
+</html>

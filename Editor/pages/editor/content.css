@@ -1,0 +1,255 @@
+﻿
+@font-face {
+    font-family: fontello;
+    src: url('./fontello.woff2');
+}
+.modalclosebtn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 1;
+}
+html,body{
+    width:100%;
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+#contentarea{
+    padding: 10px;
+    margin:10px;
+    background-color: #fff;
+}
+
+.navbar-inverse {
+    border-radius: 0 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 55;
+    margin-bottom: 0 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    cursor: pointer;
+}
+
+.pad0{
+    padding: 0 !important;
+}
+#contentarea .row{
+    margin: 3px 0;
+}
+
+.navbar{
+    margin: 0 !important;
+    border-radius: 0;
+    border: 0;
+    
+}
+
+.height500{
+    height: 500px;
+}
+.height50{
+    height: 50px;
+}
+.height150{
+    height: 150px;
+}
+.height250{
+    height: 250px;
+}
+.height350{
+    height:350px;
+}
+.fontsize35{
+    font-size: 35px;
+}
+.textcenter{
+    text-align: center;
+}
+.dodgerblue{
+    color: dodgerblue;
+}
+
+.pad20{
+    padding: 20px;
+}
+.pad50{
+    padding: 50px;
+}
+.alicebluebg{
+    background-color: #f8f9fa;
+}
+.mar0{
+    margin: 0;
+}
+.pad0{
+    padding: 0;
+}
+.width100per{
+    width: 100%;
+}
+.width200{
+    width:200px;
+}
+.width150{
+    width:150px;
+}
+.width50{
+    width:50px;
+}
+.borderrad100per{
+    border-radius: 100%;
+}
+p{
+    margin: 0;
+}
+.mar0{
+    margin: 0;
+}
+.alignright{
+    text-align: right;
+}
+.textcenter{
+    text-align: center;
+}
+.addnewpageinput{
+    border: 1px solid #ddd;
+    box-shadow: none;
+    padding: 20px;
+    border-radius: 0;
+}
+.addnewpagecancelbtn{
+    background: #fff;
+    border: 1px solid;
+    color: #000;
+    padding: 7px 25px;
+    text-transform: uppercase;
+}
+.addnewpagesubmitbtn{
+    background: #9b59b6;
+    border: 1px solid #9b59b6;
+    color: #fff;
+    padding: 7px 25px;
+    text-transform: uppercase;
+}
+.modalemailtxt{
+    font-size: 17px;
+    line-height: 35px;
+}
+.modalwebsitenametxt{
+    font-size: 17px;
+    line-height: 35px;
+}
+.borderlft1grey{
+    border-left: 1px solid #ddd;
+}  
+
+/* icon font css */
+.size-12{
+    font-size: 12px;
+}
+.size-14{
+    font-size: 14px;
+}
+
+.size-16{
+    font-size: 16px;
+}
+
+.size-18{
+    font-size: 18px;
+}
+
+.size-21{
+    font-size: 21px;
+}
+
+.size-24{
+    font-size: 24px;
+}
+.size-28{
+    font-size: 28px;
+}
+.size-32{
+    font-size: 32px;
+}
+
+.size-48{
+    font-size: 48px;
+}
+
+.size-64{
+    font-size: 64px;
+}
+
+.size-80{
+    font-size: 80px;
+}
+
+.size-96{
+    font-size: 96px;
+}
+
+.WHITE {
+    color: #FFFFFF;
+}
+
+.SILVER {
+    color: #C0C0C0;
+}
+
+.GRAY {
+    color: #808080;
+}
+
+.BLACK {
+    color: #000000;
+}
+
+.RED {
+    color: #FF0000;
+}
+
+.MAROON {
+    color: #800000;
+}
+
+.YELLOW {
+    color: #FFFF00;
+}
+
+.OLIVE {
+    color: #808000;
+}
+
+.LIME {
+    color: #00FF00;
+}
+
+.GREEN {
+    color: #008000;
+}
+
+.AQUA {
+    color: #00FFFF;
+}
+
+.TEAL {
+    color: #008080;
+}
+
+.BLUE {
+    color: #0000FF;
+}
+
+.NAVY {
+    color: #000080;
+}
+
+.FUCHSIA {
+    color: #FF00FF;
+}
+
+.PURPLE {
+    color: #800080;
+}

@@ -1,0 +1,113 @@
+html,body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    background: url(../../assets/images/icon-background.webp) center/cover;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+.headingtext{
+    font-size:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.loginbtndiv{
+    text-align: right;
+}
+.fb-login{
+   
+    width: 120px;
+    background-color: #3F51B5;
+    border: 1px solid #3F51B5;
+    color: #fff;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .21px;
+}
+.fb-login .fa-facebook{
+    font-size: 20px;
+    padding: 7px 11px;
+    background: #fff;
+    color: #3F51B5;
+    margin-right: 17px;
+}
+.fb-login-text{
+    position: absolute;
+    line-height: 36px;
+    margin-left: 4px;
+}
+.loginbtn,.loginbtn:hover,.loginbtn:active,.loginbtn:focus{
+    background: blueviolet !important;
+    color: #fff;
+    width: 100px;
+    height: 33px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: Roboto;
+    font-weight: 500;
+    outline:none;
+}
+.logodiv{
+    text-align: center;
+
+}
+.logodiv img{
+    width: 150px;;
+}
+.pageloader{
+	display:none;
+    position: fixed;
+    z-index: 999999;
+    top: 347px;
+    left: 45%;
+    background: #fff;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.pageloader img{
+	width:30px;
+}
+.loginformdiv{
+    width: 640px;
+    height: 511px;
+    margin: 0 auto;
+    background: url(monitor.png) center/cover;
+    padding: 20px 50px 10px 50px;
+}
+.loginformdiv h3{
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+input{
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    padding: 18px !important;
+    border-radius: 20px !important;
+}
+@media screen and (max-width: 767px) {
+    .loginformdiv{
+        width: 380px;
+        height: 511px;
+        margin: 0 auto;
+        background: none;
+        padding: 20px 50px 10px 50px;
+    }
+}

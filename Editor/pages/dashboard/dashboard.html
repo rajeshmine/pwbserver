@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PWB | DASHBOARD</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="./../../assets/css/animate.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Prematix Website Builder</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <p>Navigation</p>
+                <li>
+                    <a href="./../../index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="./dashboard.html">Dashboard</a>
+                </li>
+                <!-- <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="./../template/template.html">Templates</a>
+                </li>
+                <li>
+                    <a href="./../templateinsert/template.html">Templates Insert</a>
+                </li>
+                <li>
+                    <a href="">Profile</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li><a>Logout</a></li>
+                <li><a class="article">Back to Home</a></li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-justify"></i>
+
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li><a class="useraccount_firstletter">:)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pad30 websitedatafound">
+                <div class="container-fluid websitelist">
+                    <div class="row boxshadow1 bgwhite pad10">
+                        <div class="col-sm-4 padlft0 borderrgttddd mar10">
+                            <div>
+                                <img class="img-responsive" src="https://storage.googleapis.com/wzsitethumbnails/site-49316198/800x500.jpg?1539002755831">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="websitename">Website Name</p>
+                            <p class="websitestatus">Website Activated <i class="glyphicon glyphicon-saved"></i></p>
+                            <p>Last updated: Mon, Oct 8, 2018 6:15 PM</p>
+                            <button class="editsitebtn" onclick="editsite()">EDIT SITE</button>
+                            <div class="textalignrgt dropdown">
+                                <svg class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="true" viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.87); fill: currentcolor; height: 50px;
+                                    width: 50px;
+                                    padding: 15px;cursor: pointer; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">
+                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                </svg>
+                                <ul class="dropdown-menu fadeIn animated" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-pencil pad5"></i>
+                                            Rename
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-trash pad5"></i>
+                                            Remove
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pad30 websitedatanotfound">
+                <div class="container-fluid">
+                    <div class="row boxshadow1 bgwhite pad10 textcenter">
+                        <div class="pad10">
+                            <img style="width:200px;" src="../../assets/images/sitesgoogle.png">
+                        </div>
+                        <p>Looks like you haven't created a website yet :( </p>
+                        <button class="createwebsitebtn" onclick="createwebsite()">CREATE YOUR WEBSITE</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./../../assets/js/config.js"></script>
+    <script src="./../../assets/js/apicall.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>
